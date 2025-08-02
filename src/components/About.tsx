@@ -1,9 +1,9 @@
 const About = () => {
   const skills = [
-    { name: 'Frontend', tech: ['React', 'TypeScript', 'Tailwind'] },
-    { name: 'Backend', tech: ['Node.js', 'Python', 'PostgreSQL'] },
-    { name: 'Tools', tech: ['Git', 'Docker', 'AWS'] },
-    { name: 'Design', tech: ['Figma', 'UI/UX', 'Responsive'] }
+    { name: 'Frontend', tech: ['React', 'TypeScript', 'Tailwind', 'Bootstrap'] },
+    { name: 'Database', tech: ['PosgreSQL', 'MySql', 'MongoDb', 'Sqlite-3'] },
+    { name: 'Tools & Platforms', tech: ['Git & Git-Hub', 'Firebase', 'n8n'] },
+    { name: 'Backend', tech: ['Node.js', 'Python', 'PostgreSQL'] }
   ];
 
   return (
@@ -12,7 +12,7 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-pixel font-bold text-primary mb-4 glitch" data-text="ABOUT_ME">
-            ABOUT_ME
+            ABOUT ME
           </h2>
           <div className="w-32 h-1 bg-gradient-neon mx-auto rounded-full"></div>
         </div>
@@ -25,24 +25,22 @@ const About = () => {
                 $ Who am I
               </div>
               <p className="text-foreground leading-relaxed mb-4">
-                I'm a passionate full-stack developer who loves turning complex problems into elegant, 
-                user-friendly solutions. With a strong foundation in modern web technologies, I create 
-                applications that are not just functional, but delightful to use.
+               As a full-stack developer, I thrive on transforming complex issues into simple, delightful solutions. My strong foundation in modern web technologies allows me to build applications that are not just effective, but truly a pleasure to use.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
-                projects, or playing retro arcade games for inspiration.
+                When I'm not coding, you'll find me exploring new technologies, brainstorming some 
+                projects, or probably playing retro arcade games.
               </p>
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6">
               <div className="text-secondary font-mono font-bold mb-4 text-lg">
-                $ cat experience.txt
+                $ Get-Content  experience.txt
               </div>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                  <span className="text-foreground">3+ years of professional development</span>
+                  <span className="text-foreground">1+ years of professional development</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-secondary rounded-full animate-pulse delay-100"></div>
@@ -50,11 +48,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-accent rounded-full animate-pulse delay-200"></div>
-                  <span className="text-foreground">Responsive design & UX focus</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full animate-pulse delay-300"></div>
-                  <span className="text-foreground">Agile development methodologies</span>
+                  <span className="text-foreground">Cross platform mobile applications</span>
                 </div>
               </div>
             </div>
@@ -92,20 +86,17 @@ const About = () => {
             </div>
 
             {/* Achievement Stats */}
-            <div className="grid grid-cols-3 gap-4">
+            {/* <div className="grid grid-cols-3 gap-4">
               <div className="bg-card border border-border rounded-lg p-4 text-center group hover:glow-green transition-all duration-300">
-                <div className="text-2xl font-bold text-primary group-hover:neon-text">15+</div>
+                <div className="text-2xl font-bold text-primary group-hover:neon-text">10+</div>
                 <div className="text-sm text-muted-foreground font-mono">Projects</div>
               </div>
               <div className="bg-card border border-border rounded-lg p-4 text-center group hover:glow-cyan transition-all duration-300">
-                <div className="text-2xl font-bold text-secondary group-hover:text-secondary">50+</div>
+                <div className="text-2xl font-bold text-secondary group-hover:text-secondary">60+</div>
                 <div className="text-sm text-muted-foreground font-mono">Commits</div>
               </div>
-              <div className="bg-card border border-border rounded-lg p-4 text-center group hover:glow-purple transition-all duration-300">
-                <div className="text-2xl font-bold text-accent group-hover:text-accent">3+</div>
-                <div className="text-sm text-muted-foreground font-mono">Years</div>
-              </div>
-            </div>
+              
+            </div> */}
           </div>
         </div>
       </div>

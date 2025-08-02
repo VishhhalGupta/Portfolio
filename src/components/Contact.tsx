@@ -24,25 +24,25 @@ const Contact = () => {
     {
       name: 'GitHub',
       icon: '⚡',
-      url: 'https://github.com',
+      url: 'https://github.com/VishhhalGupta/',
       color: 'primary'
     },
     {
       name: 'LinkedIn',
       icon: '💼',
-      url: 'https://linkedin.com',
+      url: 'https://linkedin.com/in/vishal-dharmini/',
       color: 'secondary'
     },
     {
       name: 'Twitter',
       icon: '🐦',
-      url: 'https://twitter.com',
+      url: 'https://x.com/vishaldharmini',
       color: 'accent'
     },
     {
       name: 'Email',
       icon: '📧',
-      url: 'mailto:vishal@example.com',
+      url: 'mailto:vishaldharmini@gmail.com',
       color: 'primary'
     }
   ];

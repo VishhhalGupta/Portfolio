@@ -1,3 +1,5 @@
+import { Github } from "lucide-react";
+
 const Projects = () => {
   const developmentFlow = [
     {
@@ -39,25 +41,52 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with React, Node.js, and PostgreSQL',
-      tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
+      title: 'NextGen-Nexus',
+      description: 'A cutting-edge web application for managing and visualizing complex data sets with real-time collaboration features.',
+      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React', 'Apps Scripts-API'],
       status: 'Completed',
-      link: '#'
+      link: 'https://nextgennexus.github.io/nextgen-nexus',
+      Github: 'https://github.com/VishhhalGupta/nextgen-nexus'
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task manager with real-time updates and team features',
-      tech: ['TypeScript', 'Socket.io', 'MongoDB', 'Redis'],
+      title: 'BlockChain Voting',
+      description: 'Developed an interactive pathfinding visualizer demonstrating the A* search algorithm.',
+      tech: ['HTML5', 'CSS3', 'JavaScript', 'Data Structures & Algorithms'],
       status: 'In Progress',
-      link: '#'
+      link: 'https://github.com/VishhhalGupta/BlockChain-Voting',
+      Github: 'https://github.com/VishhhalGupta/BlockChain-Voting'
     },
     {
-      title: 'Analytics Dashboard',
-      description: 'Data visualization platform with interactive charts and reporting',
-      tech: ['React', 'D3.js', 'Python', 'FastAPI'],
+      title: 'Vivyatech Innovations',
+      description: 'Responsive, industry-grade landing page to showcase Vivyatech Innovations’ services and offerings. ',
+      tech: ['HTML', 'JavaScript', 'CSS', 'Web3Forms – API','App Scripts'],
       status: 'Completed',
-      link: '#'
+      link: 'https://vivyatech.com/',
+      Github: 'https://github.com/VishhhalGupta/VivyaTech'
+    },
+    {
+      title: 'UPI Analytics',
+      description: 'A data analytics case study project on studying consumers behaviour in their montly expenditures',
+      tech: ['HTML', 'JavaScript', 'CSS', 'Web3Forms – API','App Scripts'],
+      status: 'Completed',
+      link: 'https://colab.research.google.com/drive/1gwXOKmEkRNizP_lQVpcBXMsJZJM3SAWv?usp=sharing',
+      Github: 'https://github.com/VishhhalGupta/UPI_Spend_Analysis'
+    },
+    {
+      title: 'Path Visualization',
+      description: 'Developed an interactive pathfinding visualizer demonstrating the A* search algorithm.',
+      tech: ['HTML5', 'CSS3', 'JavaScript', 'Data Structures & Algorithms'],
+      status: 'Completed',
+      link: 'https://path-finding-visualization-rouge.vercel.app/',
+      Github: 'https://github.com/VishhhalGupta/Path-Finding-Visualization'
+    },
+    {
+      title: 'BREAKFAST',
+      description: 'Data visualization platform with interactive charts and reporting',
+      tech: ['Flutter', 'Dart', 'C++ '],
+      status: 'Completed',
+      link: 'https://github.com/VishhhalGupta/breakFAST',
+      Github: 'https://github.com/VishhhalGupta/breakFAST'
     }
   ];
 
@@ -71,46 +100,8 @@ const Projects = () => {
           </h2>
           <div className="w-32 h-1 bg-gradient-neon mx-auto rounded-full"></div>
           <p className="text-muted-foreground font-mono mt-6 max-w-2xl mx-auto">
-            $ cat development_process.md
+            $ cd projects
           </p>
-        </div>
-
-        {/* Development Flow */}
-        <div className="mb-20">
-          <h3 className="text-2xl md:text-3xl font-pixel font-bold text-secondary mb-12 text-center">
-            Development Flow: From Idea to Production
-          </h3>
-          
-          <div className="relative">
-            {/* Connection Line */}
-            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-neon transform -translate-y-1/2"></div>
-            
-            <div className="grid md:grid-cols-5 gap-8">
-              {developmentFlow.map((phase, index) => (
-                <div key={phase.step} className="relative">
-                  <div className="bg-card border border-border rounded-lg p-6 text-center group hover:glow-green transition-all duration-300 relative z-10">
-                    {/* Step Number */}
-                    <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-${phase.color} text-${phase.color}-foreground font-bold text-lg mb-4 mx-auto`}>
-                      {phase.step}
-                    </div>
-                    
-                    {/* Icon */}
-                    <div className="text-3xl mb-3">{phase.icon}</div>
-                    
-                    {/* Title */}
-                    <h4 className="font-mono font-bold text-foreground mb-3">
-                      {phase.title}
-                    </h4>
-                    
-                    {/* Description */}
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {phase.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Featured Projects */}
@@ -158,13 +149,62 @@ const Projects = () => {
                       ))}
                     </div>
                   </div>
-                  
-                  <button className="w-full arcade-button text-sm">
-                    View Project →
-                  </button>
+                    
+                  {/* Project Link */}
+                  <div className="flex justify-between gap-4 w-full max-w-xs">
+                  <a href={project.Github} target="_blank" rel="noopener noreferrer">
+                    <button className="arcade-button text-sm flex items-center">
+                      <Github className="inline mr-2" />
+                      View on GitHub
+                    </button>
+                    </a>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <button className="arcade-button text-sm">
+                        View Project
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+        
+        {/* Development Flow */}
+        <div className="mb-20 mt-20">
+          <h3 className="text-2xl md:text-3xl font-pixel font-bold text-secondary mb-12 text-center">
+            Development Flow: From Idea to Production
+          </h3>
+          
+          <div className="relative">
+            {/* Connection Line */}
+            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-neon transform -translate-y-1/2"></div>
+            
+            <div className="grid md:grid-cols-5 gap-8">
+              {developmentFlow.map((phase, index) => (
+                <div key={phase.step} className="relative">
+                  <div className="bg-card border border-border rounded-lg p-6 text-center group hover:glow-green transition-all duration-300 relative z-10">
+                    {/* Step Number */}
+                    <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-${phase.color} text-${phase.color}-foreground font-bold text-lg mb-4 mx-auto`}>
+                      {phase.step}
+                    </div>
+                    
+                    {/* Icon */}
+                    <div className="text-3xl mb-3">{phase.icon}</div>
+                    
+                    {/* Title */}
+                    <h4 className="font-mono font-bold text-foreground mb-3">
+                      {phase.title}
+                    </h4>
+                    
+                    {/* Description */}
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {phase.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

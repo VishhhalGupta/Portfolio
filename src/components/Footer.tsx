@@ -2,10 +2,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com', icon: '⚡' },
-    { name: 'LinkedIn', url: 'https://linkedin.com', icon: '💼' },
-    { name: 'Twitter', url: 'https://twitter.com', icon: '🐦' },
-    { name: 'Email', url: 'mailto:vishal@example.com', icon: '📧' }
+    { name: 'GitHub', url: 'https://github.com/VishhhalGupta/', icon: '⚡' },
+    { name: 'LinkedIn', url: 'https://linkedin.com/in/vishal-dharmini/', icon: '💼' },
+    { name: 'Twitter', url: 'https://x.com/vishaldharmini/', icon: '🐦' },
+    { name: 'Email', url: 'mailto:vishaldharmini@gmail.com', icon: '📧' }
   ];
 
   const quickLinks = [
@@ -82,23 +82,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-border pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-muted-foreground font-mono text-sm">
-              © {currentYear} Vishal Dharmini. All rights reserved.
-            </div>
-            
-            <div className="flex items-center gap-4 text-muted-foreground font-mono text-sm">
-              <span>Built with</span>
-              <span className="text-primary animate-pulse">❤️</span>
-              <span>and lots of</span>
-              <span className="text-secondary">☕</span>
-            </div>
-          </div>
+        <div className="border-t border-border pt-8 text-center">
           
           {/* Easter Egg */}
           <div className="text-center mt-4">
             <div className="text-xs text-muted-foreground font-mono opacity-50">
+            <p className="text-center mt-5 mb-5 text-muted-foreground font-mono text-sm">© 2025 Vishal Dharmini. All rights reserved.</p>
               $ echo "Thanks for visiting! Hope you enjoyed the retro vibes 🕹️"
             </div>
           </div>
